@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stylescontact.css">
-    
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
     </style>
+    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
 
 
     <title>Contacto</title>
@@ -33,41 +33,62 @@
   </nav>
 </header>
 <body>
-    <form id= "form" name="form" action="" class="form">
-      <h1 class="formulario__titulo" >Contáctenos</h1>
-      <input name="name" id="name" type="text" class="formulario__input">
-      <label for="name" class="formulario__label">Nombre Completo</label>
-      <input name="email" id="email" type="email" class="formulario__input">
-      <label for="email" class="formulario__label">Correo</label>
-      <input name="number" id="number" type="number" class="formulario__input">
-      <label for="number" class="formulario__label">Teléfono</label>
-      <input name="message" id="message" type="text" class="formulario__input">
-      <label for="message" class="formulario__label">Mensaje</label>
+  <form id= "form" name="form" action="" class="form">
+       <h1 class="formulario__titulo" >Contáctenos</h1>
+     
+     <div>
+       <input name="nombre" id="nombre" type="text" class="formulario__input">
+       <label for="nombre" class="formulario__label">Nombre Completo</label>
+       <span id= "mensaje1" style="display: none;">
+         <p class="formulario__input-error">Nombre Completo es requerido.</p>
+         <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </span>
+     
+      </div>
+
+     <div>
+       <input name="email" id="email" type="email" class="formulario__input">
+       <label for="email" class="formulario__label">Correo</label>
+       <span id= "mensaje2" style="display: none;">
+        <p class="formulario__input-error">Correo es requerido.</p>
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+       </span>
+     </div>
+
+     <div>
+       <input name="number" id="number" type="number" class="formulario__input">
+       <label for="number" class="formulario__label">Teléfono</label>
+       <span id= "mensaje3" style="display: none;">
+        <p class="formulario__input-error">Teléfono es requerido.</p>
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+       </span>
+     </div>
+
+     <div>
+       <input name="message" id="message" type="text" class="formulario__input">
+       <label for="message" class="formulario__label">Mensaje</label>
+       <span id= "mensaje4" style="display: none;">
+        <p class="formulario__input-error">Mensaje es requerido.</p>
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+       </span>
+     </div> 
+     
+     <div>   
       <input name="submit" id="submit" type="submit"class="formulario__submit" >
-      <label for="message" class="Nota">Nota: Debera confirmar envio desde su email, que se abrirá automaticamente. Muchas gracias por su interés!</label>
-      
-    </form>
+      <label class="Nota">Nota: Debera confirmar envio desde su email, que se abrirá automaticamente. Muchas gracias por su interés!</label>
+     </div>
+
+   </form>
+
+ 
+ 
    
     <a href="mailto:micaelamujica@ilpla.edu.ar" id="mailto"></a>
-
-   <script src="js/contacto.js"></script>
-   <script src="js/enviaremail.js"></script>
+  
+   <script src="js/Js Contacto/animaciónletras.js"></script>
+   <script src="js/Js Contacto/validarcontacto.js"></script>
    <script src="js/main.js "></script>
 
-   <!-- <script>
-    const $form = document.querySelector('#form')
-    const $buttonMailto = document.querySelector('#trucazo')
-
-    $form.addEventListener('submit', handleSubmit)
-
-    function handleSubmit(event) {
-      event.preventDefault()
-      const form = new FormData(this)
-      $buttonMailto.setAttribute('href', `mailto:sofyperlu21@gmail.com?subject= nombre${form.get('name')}  teléfono ${form.get('number')}  correo ${form.get('email')}&body=${form.get('message')}`)
-      $buttonMailto.click()
-    }
-      
-  </script> -->
-  
 </body>
 </html>
+
