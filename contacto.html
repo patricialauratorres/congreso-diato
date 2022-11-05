@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylescontact.css">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+    </style>
+
+
+    <title>Contacto</title>
+
+</head>
+<header>
+  <nav class="barra-menu">
+      <a href="index.html"><img class="logo" src="./images/logo.svg" alt="logo"></a>
+          <div class="menu-btn">
+              <div class="menu-btn_burguer"></div>
+          </div>
+          <ul class="nav-menu">
+              <li class="nav-menu-item"><a class="nav-menu-link" href="index.html">Inicio</a></li>
+              <li class="nav-menu-item"><a class="nav-menu-link" href="ubicacion.html">Ubicacion</a></li>
+              <li class="nav-menu-item"><a class="nav-menu-link" href="contacto.html">Contacto</a></li>
+              <li class="nav-menu-item"><a class="nav-menu-link" href="comentarios.html">Comentarios</a></li>
+              <li class="nav-menu-item"><a class="nav-menu-link" href="api.html">Consulta</a></li>
+
+          </ul>
+  </nav>
+</header>
+<body>
+    <form id= "form" name="form" action="" class="form">
+      <h1 class="formulario__titulo" >Contáctenos</h1>
+      <input name="name" id="name" type="text" class="formulario__input">
+      <label for="name" class="formulario__label">Nombre Completo</label>
+      <input name="email" id="email" type="email" class="formulario__input">
+      <label for="email" class="formulario__label">Correo</label>
+      <input name="number" id="number" type="number" class="formulario__input">
+      <label for="number" class="formulario__label">Teléfono</label>
+      <input name="message" id="message" type="text" class="formulario__input">
+      <label for="message" class="formulario__label">Mensaje</label>
+      <input name="submit" id="submit" type="submit"class="formulario__submit" >
+      <label for="message" class="Nota">Nota: Debera confirmar envio desde su email, que se abrirá automaticamente. Muchas gracias por su interés!</label>
+      
+    </form>
+   
+    <a href="mailto:micaelamujica@ilpla.edu.ar" id="mailto"></a>
+
+   <script src="js/contacto.js"></script>
+   <script src="js/enviaremail.js"></script>
+   <script src="js/main.js "></script>
+
+   <!-- <script>
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#trucazo')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      $buttonMailto.setAttribute('href', `mailto:sofyperlu21@gmail.com?subject= nombre${form.get('name')}  teléfono ${form.get('number')}  correo ${form.get('email')}&body=${form.get('message')}`)
+      $buttonMailto.click()
+    }
+      
+  </script> -->
+  
+</body>
+</html>

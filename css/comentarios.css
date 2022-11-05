@@ -1,0 +1,58 @@
+
+.h2 {
+  background-color: black;
+  font-family: sans-serif;
+  color:black;
+  font-size: 30px;
+  text-align: center;
+  display:flex;
+  justify-content:center
+}
+
+.contenedor {
+  font-size: small;
+  height: 50px;
+  width: 500px;
+  border: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0rem;
+  border-top-left-radius: 0em;
+}
+
+
+  
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    #img-portada-desktop {
+        display: none;
+    }
+    #img-portada-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    #img-portada-desktop {
+        display: none;
+    }
+    #img-portada-mobile {
+        display: block;
+    }
+    #frase-portada {
+        font-size: 3rem;
+    }
+    #boton-portada {
+        font-size: 1.8rem;
+    }
+    .product-card {
+        width: 80%;
+        max-width: 50rem;
+        padding-top: 5rem;
+    }
+}
