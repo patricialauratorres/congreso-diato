@@ -1,58 +1,80 @@
-
-.h2 {
-  background-color: black;
-  font-family: sans-serif;
-  color:black;
-  font-size: 30px;
-  text-align: center;
-  display:flex;
-  justify-content:center
-}
-
-.contenedor {
-  font-size: small;
-  height: 50px;
-  width: 500px;
-  border: 50px;
-  box-sizing: border-box;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  padding: 0rem;
-  border-top-left-radius: 0em;
-}
-
-
+form{
+    background-color: rgb(252, 248, 248);
+    border-radius: 3px;
+    color: #999;
+    font-size: 1.8em;
+    padding: 10px;
+    margin: 0 auto;
+    width: 300px;
+  }
+  h1{
+    text-align: center;
+  }
   
-
-/* MEDIAQUERY PARA RESPONSIVE */
-
-@media (max-width: 768px) {
-    #img-portada-desktop {
-        display: none;
+  input, textarea{
+    border: 0;
+    width: 280px;
+    border-radius: 9px;
+  }
+  
+  .field{
+    border: solid 1px #ccc;
+    padding: 10px;
+  
+    
+  }
+  
+  .field:focus{
+    border-color: #f9f9f6;
+  }
+  
+  .center-content{
+    text-align: center;
+  }
+  .btn{
+  border-radius: 9px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(24, 237, 219, 0.921);
+  box-shadow: 0 1px 1px rgba(175, 180, 184, 0.3); 
+  }
+  
+  .btn{
+  color: rgb(215, 213, 213);
+  background-color: #28e2ef;
+  }
+  .btn:hover{
+  background-color: #37daf0;	
+  }
+  .btn:active{
+  background-color: #29bcd6;
+  }
+  
+  /* Responsive*/
+  
+  @media screen and (max-width: 1920px){
+    body{
+        background-color: rgb(195, 255, 127);
     }
-    #img-portada-mobile {
-        display: block;
+  }
+  @media screen and (max-width: 1280px){
+    body{
+        background-color: rgb(42, 241, 245);
     }
-}
-
-@media (max-width: 576px) {
-    #img-portada-desktop {
-        display: none;
+  }
+  
+  @media screen and (max-width: 800px){
+    body{
+        background-color: rgb(255, 172, 127);
     }
-    #img-portada-mobile {
-        display: block;
+  }
+  
+  @media screen and (max-width: 480px){
+    body{
+        background-color: rgb(127, 136, 255);
     }
-    #frase-portada {
-        font-size: 3rem;
-    }
-    #boton-portada {
-        font-size: 1.8rem;
-    }
-    .product-card {
-        width: 80%;
-        max-width: 50rem;
-        padding-top: 5rem;
-    }
-}
+  }
+  
+  
+  
