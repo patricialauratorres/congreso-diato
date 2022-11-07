@@ -1,5 +1,6 @@
 #portada-index {
     position: relative;
+    
 }
 
 .img-portada {
@@ -28,6 +29,7 @@
     margin: 2rem;
     font-style: italic;
     font-weight: 300;
+    background-image: url(https://naturaleza.animalesbiologia.com/wp-content/uploads/2021/11/diatomeas.jpg);
 }
 
 
@@ -262,3 +264,4 @@ opciones4 img {
         padding-top: 5rem;
     }
 }
+

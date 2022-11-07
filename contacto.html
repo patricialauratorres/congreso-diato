@@ -27,68 +27,64 @@
               <li class="nav-menu-item"><a class="nav-menu-link" href="ubicacion.html">Ubicacion</a></li>
               <li class="nav-menu-item"><a class="nav-menu-link" href="contacto.html">Contacto</a></li>
               <li class="nav-menu-item"><a class="nav-menu-link" href="comentarios.html">Comentarios</a></li>
-              <li class="nav-menu-item"><a class="nav-menu-link" href="api.html">Consulta</a></li>
+              <!-- <li class="nav-menu-item"><a class="nav-menu-link" href="api.html">Consulta</a></li> -->
 
           </ul>
   </nav>
 </header>
 <body>
-  <form id= "form" name="form" action="" class="form">
+
+  <section class="background">
+
+  </section>
+    <section class="contenido">
+  
+      <form id= "form" name="form" action="" class="form">
        <h1 class="formulario__titulo" >Contáctenos</h1>
-     
-     <div>
+    
        <input name="nombre" id="nombre" type="text" class="formulario__input">
        <label for="nombre" class="formulario__label">Nombre Completo</label>
        <span id= "mensaje1" style="display: none;">
          <p class="formulario__input-error">Nombre Completo es requerido.</p>
          <i class="formulario__validacion-estado fas fa-times-circle"></i>
         </span>
-     
-      </div>
-
-     <div>
+    
        <input name="email" id="email" type="email" class="formulario__input">
        <label for="email" class="formulario__label">Correo</label>
        <span id= "mensaje2" style="display: none;">
         <p class="formulario__input-error">Correo es requerido.</p>
         <i class="formulario__validacion-estado fas fa-times-circle"></i>
        </span>
-     </div>
-
-     <div>
+   
        <input name="number" id="number" type="number" class="formulario__input">
        <label for="number" class="formulario__label">Teléfono</label>
        <span id= "mensaje3" style="display: none;">
         <p class="formulario__input-error">Teléfono es requerido.</p>
         <i class="formulario__validacion-estado fas fa-times-circle"></i>
        </span>
-     </div>
-
-     <div>
+    
        <input name="message" id="message" type="text" class="formulario__input">
        <label for="message" class="formulario__label">Mensaje</label>
        <span id= "mensaje4" style="display: none;">
         <p class="formulario__input-error">Mensaje es requerido.</p>
         <i class="formulario__validacion-estado fas fa-times-circle"></i>
        </span>
-     </div> 
-     
-     <div>   
-      <input name="submit" id="submit" type="submit"class="formulario__submit" >
-      <label class="Nota">Nota: Debera confirmar envio desde su email, que se abrirá automaticamente. Muchas gracias por su interés!</label>
-     </div>
 
-   </form>
-
- 
- 
-   
-    <a href="mailto:micaelamujica@ilpla.edu.ar" id="mailto"></a>
+       <input name="submit" id="submit" type="submit"class="formulario__submit" >
+       <label class="Nota">Nota: Debera confirmar envio desde su email, que se abrirá automaticamente. Muchas gracias por su interés!</label>
+    
+       
+      </form>
   
-   <script src="js/Js Contacto/animaciónletras.js"></script>
-   <script src="js/Js Contacto/validarcontacto.js"></script>
-   <script src="js/main.js "></script>
+  
+     <a href="mailto:micaelamujica@ilpla.edu.ar" id="mailto"></a>
+
+     <script src="js/Js Contacto/animaciónletras.js"></script>
+     <script src="js/Js Contacto/validarcontacto.js"></script>
+     <script src="js/main.js "></script>
+  
+    </section>   
 
 </body>
 </html>
-
+     

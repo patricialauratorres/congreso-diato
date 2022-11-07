@@ -14,7 +14,7 @@ function validarFormulario(evento) {
     if (nombre.length == 0) {
         mensaje1.style.display = "block"
         error = true
-        return;
+        
     }
     else {
         mensaje1.style.display = "none"
@@ -25,7 +25,7 @@ function validarFormulario(evento) {
     if (email.length == 0) {
         mensaje2.style.display = "block"
         error = true
-        return;
+        
     }
     else {
         mensaje2.style.display = "none"
@@ -36,7 +36,7 @@ function validarFormulario(evento) {
     if (number.length == 0) {
         mensaje3.style.display = "block"
         error = true
-        return;
+        
     }
     else {
         mensaje3.style.display = "none"
@@ -47,7 +47,7 @@ function validarFormulario(evento) {
     if (message.length == 0) {
         mensaje4.style.display = "block"
         error = true
-        return;
+        
     }
     else {
         mensaje4.style.display = "none"
@@ -67,4 +67,3 @@ function validarFormulario(evento) {
    
     
 }
-
